@@ -1,0 +1,91 @@
+.container {
+    position: relative;
+  }
+  
+  .text {
+    position: relative;
+    z-index: 1;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 20%;
+  }
+  
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+  }
+
+  #message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #text {
+    font-size: 60px;
+    font-weight: bold;
+    color: #FF69B4;
+    text-shadow: 2px 2px #FFC0CB;
+  }
+
+  #heart {
+    font-size: 100px;
+    color: #FF69B4;
+    text-shadow: 2px 2px #FFC0CB;
+    animation-name: heart-beat;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes heart-beat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+
+.mother {
+width: 100px;
+height: 200px;
+background-color: black;
+border-radius: 50% / 100%;
+position: relative;
+}
+.mother:before {
+content: "";
+position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 20px;
+height: 80px;
+background-color: white;
+border-radius: 50%;
+}
+.mother:after {
+content: "";
+position: absolute;
+top: 90px;
+left: 30%;
+width: 40px;
+height: 10px;
+background-color: white;
+border-radius: 10px;
+}
+.mother:after {
+content: "";
+position: absolute;
+top: 90px;
+right: 30%;
+width: 40px;
+height: 10px;
+background-color: white;
+border-radius: 10px;
+}
