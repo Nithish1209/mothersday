@@ -1,6 +1,6 @@
 # happy mothers day
 
-###live link : https://nithish1209.github.io/ma/ma.html
+###live link : https://nithish1209.github.io/mothersday/ma.html
 Project Link: Mother's Day Tribute 
 
 Description:
